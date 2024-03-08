@@ -30,6 +30,7 @@ if not os.path.exists(f"./conf.json"):
     with open("./log.json", "w+") as f:
         json.dump(log_template, fp=f, sort_keys=True, indent=4, separators=(',', ': '), ensure_ascii=False)
     
+    os.makedirs("./data")
     print("[+] 请填写基本信息后启动")
     exit()
 
