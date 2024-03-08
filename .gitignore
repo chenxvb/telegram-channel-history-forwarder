@@ -1,0 +1,5 @@
+anon.session
+data/*
+channels.log
+conf.json
+log.json
