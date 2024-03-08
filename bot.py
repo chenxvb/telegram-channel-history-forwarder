@@ -2,6 +2,8 @@ from telethon import TelegramClient
 import json
 import datetime
 import os
+import time
+import schedule
 
 conf_template = {
     "api_id": "",
@@ -188,6 +190,13 @@ async def main():
     print("[+] 发送频道更新")
     await check()
 
+def run_once():
+    with client:
+        client.loop.run_until_complete(main())
 
-with client:
-    client.loop.run_until_complete(main())
+schedule.every().day.at("07:30").do(run_once)        
+
+run_once()
+while True:
+    schedule.run_pending()   # 运行所有可以运行的任务
+    time.sleep(60)
