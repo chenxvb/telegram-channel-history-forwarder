@@ -1,6 +1,6 @@
-## telegram-channel-history-forwarder
+# telegram-channel-history-forwarder
 
-### Introduction
+## Introduction
 
 该项目是基于 [Telethon](https://github.com/LonamiWebs/Telethon) 的 TG 机器人，通过爬取频道历史信息来得到每日推送，类似于 私人频道版 历史上的今天
 
@@ -8,11 +8,11 @@
 
 或者，你也可以联系作者使用做好的成品 bot
 
-### Requirement
+## Requirement
 
 Just  `pip install -r requirement` 
 
-### Getting Start
+## Getting Start
 
 1. 运行 `git clone https://github.com/chenxvb/telegram-channel-history-forwarder.git`
 2. 运行 `python3 bot.py` 以生成必要文件
