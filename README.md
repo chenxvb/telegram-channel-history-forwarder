@@ -8,6 +8,10 @@
 
 或者，你也可以联系作者使用做好的成品 bot
 
+效果如图
+
+![test pic](./test.png)
+
 ## Requirement
 
 Just  `pip install -r requirement` 
